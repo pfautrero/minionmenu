@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Minion Menu</title>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/minionMenu.js"></script>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Minion Menu</h1>
+	<div class="menu">
+		<ul class="list">
+			<li>
+				<a class="menutitle" href="#">TITLE 1</a>
+				<ul class="submenu">
+					<li><a href="#">ELEMENT 1</a></li>
+					<li>ELEMENT 2</li>
+					<li>ELEMENT 3</li>
+					<li>ELEMENT 4</li>
+					<li>ELEMENT 5</li>
+					<li>ELEMENT 6</li>								
+				</ul>
+			</li>
+			<li>
+				<a class="menutitle" href="#">TITLE 2</a>
+				<ul class="submenu">
+					<li>ELEMENT 1</li>
+					<li>ELEMENT 2</li>
+					<li>ELEMENT 3</li>
+					<li>ELEMENT 4</li>					
+				</ul>
+			</li>	
+			<li>
+				<a class="menutitle" href="#">TITLE 3</a>
+				<ul class="submenu">
+					<li>ELEMENT 1</li>
+					<li>ELEMENT 2</li>
+					<li>ELEMENT 3</li>
+					<li>ELEMENT 4</li>					
+				</ul>
+			</li>	
+			<li>
+				<a class="menutitle" href="#">TITLE 4</a>
+				<ul class="submenu">
+					<li>ELEMENT 1</li>
+					<li>ELEMENT 2</li>
+					<li>ELEMENT 3</li>
+					<li>ELEMENT 4</li>					
+				</ul>
+			</li>	
+			<li>
+				<a class="menutitle" href="#">TITLE 5</a>
+				<ul class="submenu">
+					<li>ELEMENT 1</li>
+					<li>ELEMENT 2</li>
+					<li>ELEMENT 3</li>
+					<li>ELEMENT 4</li>					
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<script>
+	
+		$(".menu").minionMenu({
+			delay:10,
+			step:10,
+			prefix:'big',
+			imgFolder: 'img',
+			rates: [0.30, 0.40, 0.60, 0.80]
+		});
+		
+	</script>	
+</body>
+</html>

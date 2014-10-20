@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+body {
+	background:url(../img/background.jpg) no-repeat fixed;
+	background-position:center center;
+	background-size:cover;
+
+  }
+h1 {
+	color:white;
+	font-family: 'Lobster', cursive;      
+	text-align:center;
+	font-size:3em;
+	margin:0px;
+}
+.menu {
+	border: 1px solid black;
+	width: 25%;
+	margin-left:40px;
+	bottom:0px;
+	height:600px;
+	background-color: #dddddd;
+	overflow:hidden;
+	box-shadow: 0px 0px 25px #000000;
+	border:10px solid white;
+	border-radius:5px;
+}
+.menu ul {
+	list-style-type: none;	
+	margin:0px;
+	padding:0px;
+	text-align:center;			
+	color:black;
+}
+.menu ul li {
+	transition: background-color 1s ease;
+}
+.menu ul li:hover {
+	background-color:#1B9BFF;
+
+}	
+
+.submenu {
+	/*max-height: 0; */
+	overflow:hidden;
+	background-color:#aaaaaa;	
+}
+.submenu li {
+	background-color:#eeeeee;
+}
+
+.menutitle {
+	text-decoration: none;
+	color: black;
+	display:block;
+	width:100%;
+	height:100%;
+	padding:10px;
+	border-bottom:1px solid white;
+	background-image: none;
+
+}
+.menutitle_down {
+	color:white;
+	background-image:url(../img/arrow_down.png);
+	background-repeat: no-repeat;
+	background-position: 85% center;	
+}
+.menutitle_up {
+	color:white;
+	background-image:url(../img/arrow_up.png);
+	background-repeat: no-repeat;
+	background-position: 85% center;	
+}
+.list {
+	margin:0px;
+}
+.sprite {
+	border:0px;
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+/* does not work on chromium */
+img { 
+	image-rendering: optimizeSpeed;             /* FUCK SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+	image-rendering: -o-crisp-edges;            /* Opera                          */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	image-rendering:crisp-edges;               /* CSS4 Proposed  */
+	image-rendering: pixelated; /* Chrome (and eventually Safari) */
+}	
